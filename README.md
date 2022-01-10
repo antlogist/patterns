@@ -6,4 +6,4 @@
 > Rather, it is a description or template for how to solve a problem that can be used in many different situations.
 > Design patterns are formalized best practices that the programmer
 > can use to solve common problems when designing an application or system.
->  *Wikipedia*
+> *Wikipedia*
