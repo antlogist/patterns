@@ -1,6 +1,6 @@
 <?php
 
-class DebitCard
+class DebitCard implements ObjectInterface
 {
     public $cardNumber = '';
 

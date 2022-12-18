@@ -16,7 +16,7 @@ class ObjectPool
         return self::$instance;
     }
 
-    public function addObject($obj)
+    public function addObject(ObjectInterface $obj)
     {
 
         $key = $obj::class;

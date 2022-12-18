@@ -1,5 +1,6 @@
 <?php
 
+include_once('Interfaces/ObjectInterface.php');
 include_once('Classes/User.php');
 include_once('Classes/DebitCard.php');
 include_once('ObjectPools/ObjectPool.php');
@@ -37,7 +38,7 @@ class ObjectPoolController
         echo '<pre>';
         var_dump($this->objectPool);
         echo '</pre>';
-        
+
         echo '=========';
 
         $this->objectPool->release($user);
@@ -45,8 +46,8 @@ class ObjectPoolController
         echo '<pre>reset var $user<br>';
         var_dump($user);
         echo '</pre>';
-        
-        echo '=========';        
+
+        echo '=========';
 
         $user3 = $this->objectPool->getObject(User::class);
         $user3 ? $user3->name = 'Arsenyy' : '';

@@ -1,6 +1,5 @@
 <?php
-
-class User
+class User implements ObjectInterface
 {
     public $name = '';
 
