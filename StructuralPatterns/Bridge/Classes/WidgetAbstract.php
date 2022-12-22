@@ -17,6 +17,8 @@ class WidgetAbstract
 
     protected function viewLogic($viewData)
     {
+        echo '<pre>';
         var_dump($viewData);
+        echo '</pre>';
     }
 }
