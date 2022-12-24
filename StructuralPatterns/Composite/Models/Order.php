@@ -1,5 +1,6 @@
-<?php 
+<?php
 
-class Product {
+class Product implements CompositeInterface
+{
     use CompositeTrait;
 }

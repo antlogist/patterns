@@ -19,6 +19,8 @@ trait CompositeTrait {
             $this->price += $compositeItem->calcPrice();
         }
 
+        var_dump('test');
+
         return $this->price;
     }
 }

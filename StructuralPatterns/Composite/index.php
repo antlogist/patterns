@@ -1,3 +1,7 @@
 <?php
 
-echo 'Composite';
+include('Controllers/PriceCompositeController.php');
+
+$prices =  new PriceCompositeController;
+
+$prices->run();
