@@ -1,25 +1,28 @@
 <?php
 
-trait CompositeTrait {
+trait CompositeTrait
+{
 
     private $compositeItems = [];
 
-    public function setChildItem(CompositeItemInterface $item) {
-        $this->compositeItems;
+    public function setChildItem(CompositeItemInterface $item)
+    {
+        $this->compositeItems[] = $item;
     }
 
-    public function calcPrice() {
-        if($this->price) {
+    public function calcPrice(): float
+    {
+        if ($this->price) {
             return $this->price;
         }
 
         $this->price = 0;
 
-        foreach($this->compositeItems as $compositeItem) {
+        foreach ($this->compositeItems as $compositeItem) {
             $this->price += $compositeItem->calcPrice();
         }
 
-        var_dump('test');
+        echo ("$this->id > $this->type > $this->name > $this->price<br>");
 
         return $this->price;
     }

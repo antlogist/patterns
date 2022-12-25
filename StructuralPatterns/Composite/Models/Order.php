@@ -1,6 +1,8 @@
 <?php
 
-class Product implements CompositeInterface
+class Order implements CompositeInterface
 {
     use CompositeTrait;
+
+    public $type = 'order';
 }
