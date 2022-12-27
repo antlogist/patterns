@@ -1,3 +1,7 @@
 <?php 
 
-echo 'Decorator';
+include_once('Controllers/PriceController.php');
+
+$price = new PriceController;
+
+echo $price->renderPrice();
